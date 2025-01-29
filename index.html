@@ -18,6 +18,13 @@
 </head>
 <body>
 
+	  <h2>Right click on map to mark your track</h2>
+    <p>Drag a marker to move or delete or insert new marker. Icon top right corner of map changes map type</p>
+    <div id='map'></div>
+    <textarea rows="4" cols="50" id="track">Track</textarea>
+    <div id="trackdistance"></div> <button onclick="download(gpxtrack, 'dowloadtrack.gpx', 'text/csv;encoding:utf-8')">Download GPX Track</button>
+    <script src="map-track-maker.js"></script>
+
   <!-- Display the map and title with HTML division tags  -->
   <div id="map-title">POI map</div>
   <div id="map"></div>
